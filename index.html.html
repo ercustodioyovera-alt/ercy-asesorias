@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ERCY Asesorías | Investigación Industrial</title>
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --text:#e8ecff;
+      --muted:#b7c0ff;
+      --brand:#6aa6ff;
+      --brand2:#7cf0c5;
+      --line: rgba(255,255,255,.12);
+      --radius: 18px;
+      --shadow: 0 18px 60px rgba(0,0,0,.35);
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui,Segoe UI,Roboto;
+      background:
+        radial-gradient(1200px 800px at 20% 10%, rgba(106,166,255,.25), transparent 60%),
+        radial-gradient(900px 600px at 80% 0%, rgba(124,240,197,.18), transparent 55%),
+        linear-gradient(180deg, var(--bg), #050712);
+      color:var(--text);
+    }
+
+    a{text-decoration:none;color:inherit}
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background: rgba(5,7,18,.75);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav{
+      max-width:1100px;
+      margin:auto;
+      padding:14px 24px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .brand img{
+      width:55px;
+      height:55px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .brand span{
+      font-weight:900;
+      font-size:18px;
+    }
+
+    .menu a{
+      margin:0 10px;
+      opacity:.85;
+    }
+
+    .menu a:hover{
+      opacity:1;
+    }
+
+    .btn{
+      padding:10px 16px;
+      border-radius:14px;
+      background: linear-gradient(135deg,var(--brand),var(--brand2));
+      font-weight:900;
+      color:#04101a;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:40px 24px;
+    }
+
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:24px;
+      align-items:start;
+    }
+
+    h1{
+      font-size:44px;
+      margin:14px 0;
+    }
+
+    p{
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    .card{
+      background: rgba(255,255,255,.05);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:18px;
+      box-shadow: var(--shadow);
+    }
+
+    section{
+      margin-top:50px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      gap:18px;
+    }
+
+    ul{
+      color:var(--muted);
+      line-height:1.7;
+    }
+
+    footer{
+      margin-top:60px;
+      padding:20px;
+      text-align:center;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+    }
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      h1{font-size:34px}
+      .menu{display:none}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+
+    <div class="brand">
+      <img src="logo.png" alt="ERCY Asesorías">
+      <span>ERCY ASESORÍAS</span>
+    </div>
+
+    <div class="menu">
+      <a href="#cursos">Cursos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+
+    <a class="btn" href="#contacto">WhatsApp</a>
+
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>Asesorías en Investigación Industrial</h1>
+      <p>
+        Apoyo académico especializado para estudiantes de
+        <b>Ingeniería Industrial</b> en cursos como:
+        <b>Formulación para la Investigación Industrial</b> y
+        <b>Taller de Investigación Industrial</b>.
+      </p>
+
+      <p>
+        Te ayudo a desarrollar correctamente:
+        planteamiento del problema, objetivos, matriz de consistencia,
+        metodología, instrumentos y redacción final.
+      </p>
+
+      <a class="btn" target="_blank"
+         href="https://wa.me/51940859286?text=Hola,%20quiero%20una%20asesoría%20de%20Investigación%20Industrial">
+        📲 Escribir por WhatsApp
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>📌 Atención personalizada</h3>
+      <ul>
+        <li>Ingeniería Industrial (UTP)</li>
+        <li>Sesiones 1 a 1</li>
+        <li>Corrección y orientación</li>
+        <li>Plantillas y estructura académica</li>
+      </ul>
+
+      <p><b>Horario:</b> Lun–Sáb 6:00pm – 10:00pm</p>
+    </div>
+  </section>
+
+  <!-- CURSOS -->
+  <section id="cursos">
+    <h2>Cursos que cubre la asesoría</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>📘 Formulación para la Investigación Industrial</h3>
+        <ul>
+          <li>Planteamiento del problema</li>
+          <li>Justificación y viabilidad</li>
+          <li>Objetivos e hipótesis</li>
+          <li>Variables e indicadores</li>
+          <li>Matriz de consistencia</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>📗 Taller de Investigación Industrial</h3>
+        <ul>
+          <li>Marco teórico y antecedentes</li>
+          <li>Diseño metodológico</li>
+          <li>Instrumentos y validación</li>
+          <li>Resultados y discusión</li>
+          <li>Conclusiones y anexos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <h2>Servicios principales</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>📝 Revisión de avances</h3>
+        <p>Corrección académica, coherencia y estructura.</p>
+      </div>
+
+      <div class="card">
+        <h3>📌 Desarrollo completo</h3>
+        <p>Asesoría paso a paso desde el tema hasta la sustentación.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2>Contacto directo</h2>
+
+    <div class="card">
+      <p>📲 WhatsApp: <b>+51 940 859 286</b></p>
+      <p>🕒 Horario: Lun–Sáb 6pm – 10pm</p>
+
+      <a class="btn" target="_blank"
+         href="https://wa.me/51940859286?text=Hola,%20quiero%20información%20sobre%20asesorías%20de%20Investigación%20Industrial">
+        Contactar ahora
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 ERCY ASESORÍAS — Investigación Industrial
+</footer>
+
+</body>
+</html>
